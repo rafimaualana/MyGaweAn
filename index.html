@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale 1.8" />
+    <title>new.web</title>
+    
+    <!--bootstrap css-->
+        <link
+           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+           rel="stylesheet"
+           integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+           crossorigin="anonymous"/>
+        <!--google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link 
+           href="https://fonts.googleapis.com/css2?family=roboto:wght@400;500;700;900&display=swap"
+           rel="stylesheet" />
+        <!--custom css-->
+          <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-2" href="#">MyGaweAn </a>
+    <button class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation"
+            >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active fs-5" 
+             aria-current="page" 
+             href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="#">About</a>
+          <li class="nav-item">
+          <a class="nav-link fs-5" href="#">Products</a>
+          <li class="nav-item">
+          <a class="nav-link btn btn-primary text-white px-4 py-2 ms-2" 
+          href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--section-->
+<section>
+  <div class=hero-section>
+  <div class="container my-5">
+    <div class="row align-items-center">
+      <!--text-->
+      <div class="col-md-6 order-2 order-md-1">
+        <h1 class="display-4 fw-bold"><span class="text-primary">Cari</span> pekerjaanmu disini!!</h1>
+        <p class="lead pb-4 pt-2">Tenemukan pekerjaan yang sesuai dengan passion dan skill mu</p>
+        <button class="btn btn-primary px-5 py-3 d-inline-block">Start Now</button>
+      </div>
+      <div class="col-md-6 order-1 order-md-2">
+                <img src="images/job-seeker-1.jpg" alt="cari pekerjaan" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container py-5 mt-5">
+  <div class="row align-items-center">   
+    <div class="col-md-6">
+              <img src="images/istockphoto-1283801331-612x612.jpg" alt="" class="img-fluid" />
+    </div>
+      <div class="col-md-6">
+        <section class="about-section">
+        <h2 class="text-primary fw-bold">About MyGaweAn</h2>
+        <p>MyGaweAn adalah platform pencarian kerja yang membantu kamu
+          menemukan lowongan sesuai passion dan skiil. Dengan tampilan yang
+          simpel dan mudah digunakan, kami menjadi jembatan antara pencari kerja
+          dan perusahaan, agar setiap orang bisa mendapat pluang kerja terbaik.
+        </p>
+        <button class="btn btn-primary px-5 py-3 d-inline-block fs-5 mt-2 fw-bold">
+          Learn more
+        </button>
+      </div> 
+    </div>
+  </div>
+</section>
+
+<section class="features py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 text-primary fw-bold">Key Features</h2>
+    <div class="row g-4 align-items-stretch mt-2">
+
+      <!--features 1-->
+      <div class="row mt-2 g-4">
+        <div class="col-12 col-lg-4">
+          <div class="card p-4 text-center feature-card">
+            <ion-icon name="search" class="icons"></ion-icon>
+            <h3>Job matching cerdas</h3>
+            <P class="card-text">Rekomendasi lowongan sesuai skill, 
+              pengalaman, dan passion kamu. </P>
+          </div>
+        </div>
+
+        <!--features 2-->
+        <div class="col-12 col-lg-4">
+          <div class="card p-4 text-center feature-card">
+            <ion-icon name="phone-portrait" class="icons"></ion-icon>
+            <h3>Kemudahan akses</h3>
+            <P class="card-text">Tampilan simpel, responsif, dan bisa
+              diakses dari berbagai perangkat. </P>
+          </div>
+        </div>
+
+        <!--features 3-->
+        <div class="col-12 col-lg-4">
+          <div class="card p-4 text-center feature-card">
+            <ion-icon name="notifications-outline" class="icons"></ion-icon>
+            <h3>Update lowongan</h3>
+            <P class="card-text">Lowongan kerja selalu diperbarui
+              setiap hari agar peluang tidak terlewat.</P>
+          </div>
+        </div> 
+    </div>
+  </div>
+</section>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+<div class="tab-content" id="myTabContent">
+  <!--tab all-->
+  <section class="py-5 section-gradient">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4 text-white">Lowongan Kerja</h2>
+    <!--ini all-->
+    <ul class="nav justify-content-center mb-4" 
+        id="myTab" 
+        role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" 
+                id="all-tab" 
+                data-bs-toggle="tab" 
+                data-bs-target="#all" 
+                type="button" 
+                role="tab"> All
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" 
+                id="new-tab" 
+                data-bs-toggle="tab" 
+                data-bs-target="#new" 
+                type="button" 
+                role="tab">New</button>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" 
+                id="tips-tab"
+                data-bs-toggle="tab" 
+                data-bs-target="#tips" 
+                type="button"
+                role="tab">Career Tips
+        </button>
+      </li>
+    </ul>
+
+    <!--ini Content-->
+    <div class="tab-content" id="myTabContent">
+      
+      <!--ALL-->
+      <div class="tab-pane fade show-active tab-transition" id="all" role="tabpanel">
+        <div class="row g-4" id="job-list">
+
+          <div class="col-sm-6 col-md-4">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-primary">Satpam komplek</h5>
+                <h6 class="text-muted">Perumnas Depok</h6>
+                <p class="card-text">📍 Depok | 💼 Internship</p>
+                <a href="#" class="btn btn-gradient w-100">Lamar Sekarang</a>          
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-md-4">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-primary">Zoo Kepeer</h5>
+                <h6 class="text-muted">Ragunan</h6>
+                <p class="card-text">📍 Jakarta | 💼 Full Time</p>
+                <a href="#" class="btn btn-gradient w-100">Lamar Sekarang</a>          
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--P-->
+        <nav aria-label="Page navigation" class="mt-4">
+          <ul class="pagination justify-content-center" id="pagination"></ul>
+        </nav>
+      </div>
+
+      <!--New-->
+      <div class="tab-pane fade tab-transition" id="new" role="tabpanel">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card shadow-sm h-100 border-0">
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-primary">wapres</h5>
+                <h6 class="text-muted">Istana Negara</h6>
+                <p class="card-text">📍 Jakarta | 💼 Full Time</p>
+                <a href="#" class="btn btn-gradient w-100">Lamar Sekarang</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm h-100 border-0">
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-primary">Captain America</h5>
+                <h6 class="text-muted">Avangers</h6>
+                <p class="card-text">📍 Washington DC| 💼 Internship</p>
+                <a href="#" class="btn btn-gradient w-100">Lamar Sekarang</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--tips-->
+      <div class="tab-pane fade tab-transition" id="tips" role="tabpanel">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card shadow-sm h-100 feature-card border-0">
+              <img src="https://cdn-icons-png.flaticon.com/512/2921/2921226.png" class="card-img-top p-4" alt="Tips CV">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Buat CV Menarik</h5>
+                <p class="card-text">Pelajari cara membuat CV yang profesional agar dilirik HRD.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm h-100 feature-card border-0">
+              <img src="https://cdn-icons-png.flaticon.com/512/1828/1828466.png" class="card-img-top p-4" alt="Tips Wawancara">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Tips Wawancara</h5>
+                <p class="card-text">Kuasai teknik menjawab pertanyaan interview agar percaya diri.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm h-100 feature-card border-0">
+              <img src="https://cdn-icons-png.flaticon.com/512/1420/1420338.png" class="card-img-top p-4" alt="Tips Negosiasi">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Negosiasi Gaji</h5>
+                <p class="card-text">Pelajari cara menawar gaji dengan sopan dan efektif.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+  }
+
+  /*Animasi tab*/
+  .fade-in {
+    animation: fadein 0,6s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /*Card Style*/
+  .card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+  }
+
+  /* Feature Card */
+  .feature-card {
+    cursor: pointer;
+  }
+  .feature-card img {
+    transition: transform 0.3s ease;
+  }
+  .feature-card:hover img {
+    transform: scale(1.05);
+  }
+
+  /*Button Gradient*/
+  .btn-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  .btn-gradient:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    color: white;
+    transform: scale(1.02);
+  }
+
+  /*Tab Button*/
+  .nav-link {
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+  }
+  .nav-link.active, .nav-link:hover {
+    background: #fff;
+    color: #764ba2 !important;
+  }
+</style>
+<section class="py-5">
+      <div class="container">
+        <h2 class="faq-heading">Help❓</h2>
+        <div class="row">
+          <div class="col-12">
+            <div class="accordion" id="faqAccordion">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed fs-4  fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Apa itu My GaweAn?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    My GaweAn adalah platform untuk menemukan pekerjaan yang sesuai dengan kebutuhan dan minatmu, baik full-time, part-time, maupun freelance.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Bagaimana cara mendaftar di My GaweAn?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Kamu bisa mendaftar dengan membuat akun menggunakan email atau akun media sosial, lalu melengkapi profil untuk mulai melamar pekerjaan.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed fs-4  fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Apakah My GaweAn gratis digunakan?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Ya, My GaweAn dapat digunakan secara gratis oleh pencari kerja. Fitur premium untuk perusahaan juga tersedia.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed fs-4  fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Jenis pekerjaan apa saja yang tersedia di My GaweAn?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    My GaweAn menyediakan berbagai lowongan mulai dari pekerjaan profesional, part-time untuk mahasiswa, hingga project freelance kreatif.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<style>
+      .faq-heading { 
+        margin-bottom: 2rem; 
+        text-align: center;
+        font-weight: bold;
+        font-size: 2rem;
+      }
+
+      .accordion-button { 
+        transition: background 0.3s ease, color 0.3s ease; 
+        font-weight: 500;
+      }
+
+      .accordion-button:not(.collapsed) {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #fff;
+      }
+
+      .accordion-body {
+        animation: fadeIn 0.3s ease;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-5px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+<footer class="bg-primary text-white text-center py-3 mt-5">
+  <p class="mb-1">&copy; 2025 MyGaweAn Hub. All right reserved.
+  </p>
+</footer>
+
+
+
+        <script
+           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+           integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+           crossorigin="anonymous">
+        </script>
+        <script 
+           src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+           integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+           crossorigin="anonymous">
+        </script>
+        <script 
+           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" 
+           integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" 
+           crossorigin="anonymous">
+        </script>
+
+        <script
+           src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    </body>
+    </html>
+
+
+
+
+
+    
+    
+    
+
+
