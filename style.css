@@ -1,9 +1,7 @@
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -170,14 +168,22 @@ img {
   height: auto;
 }
 
-@media (max-width: 768px) body {
+@media (max-width: 768px) {
+  body {
   font-size: 14px;
   padding: 10px;
 }
+}
 
+.navbar-nav {
+  flex-direction: row;
+  text-align:left;
+
+@media (max-width: 992px) {
 .navbar-nav {
   flex-direction: column;
   text-align: center;
+}
 }
 
 .about-section {
@@ -202,4 +208,5 @@ img {
 #searchInput:focus {
   box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
   border-color: #007bff;
+
 }
