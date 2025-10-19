@@ -186,11 +186,6 @@ img {
   border-color: #007bff;
 }
 
-/* ===============================
-   RESPONSIVE DESIGN FIXES
-   =============================== */
-
-/* Untuk layar tablet dan HP */
 @media (max-width: 992px) {
   .navbar-nav {
     flex-direction: column;
@@ -245,7 +240,6 @@ img {
   }
 }
 
-/* Untuk layar sangat kecil (max 576px) */
 @media (max-width: 576px) {
   body {
     font-size: 14px;
